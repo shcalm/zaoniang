@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>联系方式_联系方式</title>
+    <meta content="联系方式" name="keywords" />
+    <meta content="国果实业有限公司
+" name="description" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.jslides.css" media="screen" />
+    <link href="css/css2.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery.jslides.js"></script>
+    <script language=JavaScript>
+        nereidFadeObjects = new Object();
+        nereidFadeTimers = new Object();
+        function nereidFade(object, destOp, rate, delta){
+            if (!document.all)
+                return
+            if (object != "[object]"){  //do this so I can take a string too
+                setTimeout("nereidFade("+object+","+destOp+","+rate+","+delta+")",0);
+                return;
+            }
+            clearTimeout(nereidFadeTimers[object.sourceIndex]);
+            diff = destOp-object.filters.alpha.opacity;
+            direction = 1;
+            if (object.filters.alpha.opacity > destOp){
+                direction = -1;
+            }
+            delta=Math.min(direction*diff,delta);
+            object.filters.alpha.opacity+=direction*delta;
+            if (object.filters.alpha.opacity != destOp){
+                nereidFadeObjects[object.sourceIndex]=object;
+                nereidFadeTimers[object.sourceIndex]=setTimeout("nereidFade(nereidFadeObjects["+object.sourceIndex+"],"+destOp+","+rate+","+delta+")",rate);
+            }
+        }
+    </script></head>
+<body>
+<div id="topbg">
+    <div id="tpdiv">
+        <div id="logo"><img src="image/logo.jpg" alt="临歌枣酿" /></div>
+        <div id="dh">
+            <div id="b01">
+                <ul>
+                    <li><a href='#' onclick="javascript:window.external.AddFavorite('http://www.zgbnfr.com/','临歌枣酿')" title="将本站加如您的收藏夹">收藏本站</a></li>
+
+
+                </ul>
+            </div>
+            <div id="dh2">
+                <ul>
+                    <li><a href="/index.html">首页</a></li>
+                    <li><a href="/about.html">关于我们</a></li><li><a href="/xinwen.html">新闻动态</a></li><li><a href="/chanpin.html">产品展示</a></li><li><a href="/wenhua.html">枣酿文化</a></li><li><a href="/pinpai.html">品牌形象</a></li><li><a href="/show/wel94.html">招商加盟</a></li><li><a href="/rencai.html">人才招聘</a></li><li><a href="/lianxi.html">联系方式</a></li>
+                </ul>
+            </div>
+            <div id="dh3">---临歌枣酿华北总代理---</div>
+        </div>
+    </div>
+</div>
+<div class="clear"></div><!--begin main-->
+<div id="nye"></div>
+<div id="cgg"><span>
+    <a href="http://www.zgbnfr.com/lianxi.html"><img border="0" alt="400电话" onmouseout="nereidFade(this,100,3,5)" onmouseover="nereidFade(this,50,3,5)" style="filter: alpha(opacity=505)" src="/uploadfile/2014/0805/20140805050812758.jpg" title="400电话" /></a></span><span><a href="http://www.zgbnfr.com/yinpin.html"><img border="0" alt="枣酿饮品" onmouseout="nereidFade(this,100,3,5)" onmouseover="nereidFade(this,50,3,5)" style="filter: alpha(opacity=505)" src="" /></a></span><span><a href="http://www.zgbnfr.com/ganguo.html"><img border="0" alt="百年丰润枣" onmouseout="nereidFade(this,100,3,5)" onmouseover="nereidFade(this,50,3,5)" style="filter: alpha(opacity=505)" src="/image/c03.jpg" /></a></span><span><a href="http://www.zgbnfr.com/show/wel94.html"><img border="0" alt="招商加盟" onmouseout="nereidFade(this,100,3,5)" onmouseover="nereidFade(this,50,3,5)" style="filter: alpha(opacity=505)" src="/image/c04.jpg" /></a></span></div><div id="nei_body">
+    <div id="bodynr">
+        <div id="nry_left">
+            <div class="nry_left_bt"><img src="image/left_btbg.jpg" alt="产品与服务" /></div>
+            <div class="left_dhbt">产品展示</div>
+            <div class="cplist_lb">
+                <ul>
+                    <li><a href="/yinpin.html">红枣枣酿饮品</a></li><li><a href="/zao.html">红枣红酒</a></li><li><a href="/baijiu.html">红枣半干</a></li><li><a href="/zaojiu.html">红枣干红</a></li><li><a href="/ganguo.html">红枣干果</a></li>        </ul>
+            </div>
+        </div>
+        <div class="nry_right">
+            <div id="weizhi">当前位置：<a href="/index.html">首页</a> > <a href="/lianxi.html">联系方式</a>  </div>
+            <div class="neirong"><h1>联系方式</h1>
+                <!--正文-->
+                <strong>山西临歌枣酿生物科技有限公司<br />
+                </strong>地址：山西省太原市高新区国际A座一楼<br />
+                销售电话：13930441816 <br />
+
+
+        </div>
+    </div>
+</div>
+<!--end main-->
+<div id="copyright">山西临歌枣酿生物科技有限公司 &nbsp;地址:山西省太原市高新区高新国际A座一楼 &nbsp;电话:0351-7858737 &nbsp;400-075-6678 &nbsp;&nbsp;<a href="http://www.zgbnfr.com/member/login.php">经销商登录</a> <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_5929928'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/stat.php%3Fid%3D5929928%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script></div>
+<script language="JavaScript" src="http://code.54kefu.net/kefu/js/158/676358.js" type="text/javascript" charset="utf-8"></script>
+</body></html>
